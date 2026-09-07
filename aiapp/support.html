@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Synthesia — Support</title>
+<style>
+  :root {
+    --bg: #0a0a0a; --card: #171717; --border: rgba(255,255,255,0.08);
+    --text: #ffffff; --muted: #a1a1a1; --primary: #6c4fed;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+  header { text-align: center; margin-bottom: 48px; }
+  .logo {
+    width: 64px; height: 64px; border-radius: 18px; margin: 0 auto 16px;
+    background: linear-gradient(160deg, #6c4fed, #3a2a8a);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; font-weight: 700;
+  }
+  h1 { font-size: 28px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.5px; }
+  header p { color: var(--muted); margin: 0; font-size: 15px; }
+  h2 { font-size: 19px; font-weight: 600; margin: 40px 0 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 4px 20px;
+  }
+  details {
+    border-bottom: 1px solid var(--border); padding: 16px 0;
+  }
+  details:last-child { border-bottom: none; }
+  summary {
+    cursor: pointer; font-weight: 600; font-size: 15px; list-style: none;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; color: var(--muted); font-size: 20px; font-weight: 400; flex-shrink: 0; margin-left: 12px;
+  }
+  details[open] summary::after { content: "–"; }
+  details p { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+  .contact-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px; text-align: center; margin-top: 16px;
+  }
+  .contact-card p { color: var(--muted); font-size: 14px; margin: 4px 0 16px; }
+  .btn {
+    display: inline-block; background: var(--primary); color: #fff; text-decoration: none;
+    font-weight: 600; font-size: 14px; padding: 12px 24px; border-radius: 9999px;
+  }
+  footer {
+    margin-top: 56px; text-align: center; font-size: 12.5px; color: var(--muted);
+  }
+  footer a { color: var(--muted); text-decoration: underline; }
+  footer .links { margin-bottom: 8px; }
+  footer .links a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">S</div>
+    <h1>Synthesia Support</h1>
+    <p>AI video generation — questions, billing, and how-to answers.</p>
+  </header>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="card">
+    <details open>
+      <summary>How does Synthesia generate videos?</summary>
+      <p>You write a text prompt (and, for the Montage feature, optionally add reference photos of a face, location, or style). Synthesia sends your prompt and references to AI generation models, which produce your video, image, or shot-by-shot script.</p>
+    </details>
+    <details>
+      <summary>What's the difference between Quick Clip and Montage?</summary>
+      <p><strong>Quick Clip</strong> generates a single clip from your prompt in one step. <strong>Montage</strong> is a two-step flow: an AI first builds a shot-by-shot script with dialogue and timing from your prompt and references, you review it and the price, and then confirm to render the final video.</p>
+    </details>
+    <details>
+      <summary>How do coins work?</summary>
+      <p>Generating a video or image costs coins. You get coins on sign-up, from an active subscription (credited automatically every billing period), or by purchasing a one-time coin pack. Coins are consumed on use and are non-refundable except where required by law.</p>
+    </details>
+    <details>
+      <summary>How do I cancel or manage my subscription?</summary>
+      <p>Subscriptions are billed through your Apple ID. On your iPhone, go to <strong>Settings &gt; [your name] &gt; Subscriptions</strong>, choose Synthesia, and cancel or change your plan there. You can also tap "Manage Subscription" from inside the app.</p>
+    </details>
+    <details>
+      <summary>Can I get a refund?</summary>
+      <p>All purchases are billed by Apple and subject to Apple's refund policies. To request a refund, visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> or contact Apple Support — we're not able to issue refunds directly.</p>
+    </details>
+    <details>
+      <summary>Whose photos can I upload as a reference?</summary>
+      <p>Only upload photos you have the right to use — for example, yourself, or someone who has given you permission. Don't upload photos of other people without their consent, or content that violates our <a href="terms.html">Terms of Use</a>.</p>
+    </details>
+    <details>
+      <summary>My generation failed or is stuck — what do I do?</summary>
+      <p>Generation can occasionally fail due to a busy queue or an issue with the prompt. If a task fails, any coins spent on it are not charged. If a task looks stuck for more than a few minutes, contact support below with your account email and roughly when it happened.</p>
+    </details>
+  </div>
+
+  <h2>Still need help?</h2>
+  <div class="contact-card">
+    <p>Email us and we'll get back to you as soon as we can.</p>
+    <a class="btn" href="mailto:zyrexx@yandex.com">zyrexx@yandex.com</a>
+  </div>
+
+  <footer>
+    <div class="links">
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    Synthesia
+  </footer>
+
+</div>
+</body>
+</html>
